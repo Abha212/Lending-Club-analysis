@@ -1,3 +1,7 @@
 # Lending-Club-analysis
 
-In this project, I use historical loan-level data from Lending Club and investigate whether their underwriting standards declined over time
+In this project, I use historical loan-level data from Lending Club and examine whether their underwriting standards declined over time. Underwriting standards could have declined either because of increased market competition or increased investor pressures to sustain the extremely high growth rates they attained in their early years. In 2014, Lending Club filed its IPO and went public. Soon after that, there was a controversy surrounding Lending Club's founder and CEO who had borrowed some large amounts of funds through the platform in its early years, but hadnt disclosed the same to investors. 
+
+Loan level data is available through Lending Club's website - I collect and aggregate information on all loans originated through Lending Club's platform since its founding in 2007 till the latest time period. A couple of aspects should be mentioned about this loan-level database - firstly, the data is cross-sectional in nature and doesnt track each loan's performance throughout its lifetime. Instead, I only observe the most recent status of a loan - it is current or fully paid or delinquent or charged-off. However, the data does provide information on several loan and borrower characteristics. Loan characteristics include details about each loan account such as issue date, term of the loan, interest rate, principal amount, payments made and loan status. Whereas borrower characteristics captures various features about a borrower's credit history, income, debt-to-income ratio and geographic location. 
+
+
