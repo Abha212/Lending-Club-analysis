@@ -67,7 +67,7 @@ g2 <- ggplot(subset(df2, fico_range_low>=660 & fico_range_low<=740)) +
 grid.arrange(arrangeGrob(g1, g2, ncol=2, nrow=1))
 ```
 
-![](Credit_risk_analysis_by_vintage_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![](unnamed-chunk-6-1.png)
 
 ``` r
 df2 <- subset(df1, grade=="A") %>%
@@ -112,7 +112,7 @@ g4 <- ggplot(subset(df2, fico_range_low>=660 & fico_range_low<=740)) +
 grid.arrange(arrangeGrob(g3, g4, ncol=2, nrow=1))
 ```
 
-![](Credit_risk_analysis_by_vintage_files/figure-markdown_github/unnamed-chunk-6-2.png)
+![](unnamed-chunk-6-2.png)
 
 <font color=blue>Debt-to-Income ratio distribution across vintages</font>:
 
@@ -129,7 +129,7 @@ ggplot(df1) + geom_density(aes(x=dti, color=factor(issue_year)), size=1) + theme
   guides(color=guide_legend(title="Vintage")) 
 ```
 
-![](Credit_risk_analysis_by_vintage_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](unnamed-chunk-8-1.png)
 
 ``` r
 g1 <- ggplot(subset(df1, grade=="A")) + geom_density(aes(x=dti, color=factor(issue_year)), size=1) + 
@@ -153,7 +153,7 @@ g2 <- ggplot(subset(df1, grade=="B"|grade=="C")) +
 grid.arrange(arrangeGrob(g1, g2, ncol=2, nrow=1))
 ```
 
-![](Credit_risk_analysis_by_vintage_files/figure-markdown_github/unnamed-chunk-8-2.png)
+![](unnamed-chunk-8-2.png)
 
 <font color=blue>Loan amounts distribution across vintages</font>:
 
@@ -186,7 +186,7 @@ ggplot(df2) +
   guides(fill=guide_legend(title="Vintage")) 
 ```
 
-![](Credit_risk_analysis_by_vintage_files/figure-markdown_github/unnamed-chunk-10-1.png)
+![](unnamed-chunk-10-1.png)
 
 ``` r
 df1 <- df[, c("grade", "issue_year", "funded_amnt")]
@@ -247,4 +247,4 @@ g2 <- ggplot(df2) +
 grid.arrange(arrangeGrob(g1, g2, nrow=1, ncol=2))
 ```
 
-![](Credit_risk_analysis_by_vintage_files/figure-markdown_github/unnamed-chunk-10-2.png)
+![](unnamed-chunk-10-2.png)
